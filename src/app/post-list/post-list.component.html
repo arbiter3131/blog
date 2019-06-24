@@ -1,5 +1,5 @@
+<h1 class="font-weight-bold">Posts</h1>
 <ul class="list-group">
-  <app-post-list-item *ngFor="let post of posts" [title]="post.title" [content]="post.content"
-    [loveIts]="post.loveIts" [created_at]="post.created_at">
+  <app-post-list-item *ngFor="let post of posts; let i = index" [id]="i" [post]="post">
   </app-post-list-item>
 </ul>
